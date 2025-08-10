@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: about-me-pdf
-          path: main.pdf
+          path: latex/main.pdf
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
