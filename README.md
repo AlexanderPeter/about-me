@@ -1,2 +1,9 @@
-# about-me
-Kurze Vorstellung in LaTeX
+# About Me
+
+LaTeX to introduce myself.
+
+### Generate pdf
+
+```bash
+pdflatex main.tex
+```

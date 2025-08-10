@@ -1,0 +1,34 @@
+name: Build LaTeX
+
+on: [push]
+
+jobs:
+  job_build_latex:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: latex
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install LaTeX
+        run: sudo apt-get update && sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+
+      - name: Build PDF
+        run: pdflatex -interaction=nonstopmode main.tex
+
+      - name: Publish PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: about-me-pdf
+          path: main.pdf
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          keep_files: true
