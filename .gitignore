@@ -1,0 +1,9 @@
+# latex
+**/latex/*.aux
+**/latex/*.log
+**/latex/*.nav
+**/latex/*.out
+**/latex/*.pdf
+**/latex/*.snm
+**/latex/*.synctex.gz
+**/latex/*.toc

@@ -1,0 +1,58 @@
+\documentclass[aspectratio=169]{beamer}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{page number in head/foot}{}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue
+}
+
+\title{Über mich}
+\author{Alexander Peter}
+\date{}
+\begin{document}
+
+\begin{frame}[t]
+    \begin{center}
+        \begin{tabular}{@{}m{1.6cm} l@{}}
+            \includegraphics[width=1.2cm]{images/profile-picture.png} & {\LARGE\bfseries Alexander Peter} \\
+        \end{tabular}
+    \end{center}
+
+    \vspace{0.3cm}
+
+    \begin{columns}[T,onlytextwidth]
+        \begin{column}{0.5\textwidth}
+            \textbf{Werdegang}\\[0.3cm]
+            \begin{tabular}{@{}m{0.9cm} m{5cm}@{}}
+                \includegraphics[width=0.8cm]{images/logo_swiss_armed_forces.jpg} & Informatikoffizier \\
+                \includegraphics[width=0.8cm]{images/logo_swiss_post.jpg} & Informatiker EFZ \\
+                \includegraphics[width=0.8cm]{images/logo_bison.jpg} & Software Developer \\
+                \includegraphics[width=0.8cm]{images/logo_hslu_hochschule_luzern.jpg} & BSc Informatik \\
+                \includegraphics[width=0.8cm]{images/logo_hslu_hochschule_luzern.jpg} & MSc Data Science \\
+                \includegraphics[width=0.8cm]{images/logo_bzz_bildung.jpg} & Lehrperson Informatik \\
+            \end{tabular}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \textbf{Hobbies}\\[0.3cm]
+            \begin{tabular}{@{}m{0.9cm} m{5cm}@{}}
+                \includegraphics[width=0.8cm]{images/logo_computer.png} & IT-Projekte, Hackathons \\
+                \includegraphics[width=0.8cm]{images/logo_run_club.jpg} & Run Club Zug \\
+                \includegraphics[width=0.8cm]{images/logo_mensa_switzerland.jpg} & Mensa \\
+                \includegraphics[width=0.8cm]{images/logo_gemeinde_risch.jpg} & Stimmenzähler \\
+            \end{tabular}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\end{document}
